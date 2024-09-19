@@ -1,0 +1,26 @@
+[
+{
+  "directory": "D:/Projects/VScodeCXX/SET1/build",
+  "command": "E:\\Programs\\QT\\Tools\\mingw1120_64\\bin\\g++.exe   -g -O0 -Wall -std=gnu++20 -o CMakeFiles\\P1.dir\\P1\\main.cpp.obj -c D:\\Projects\\VScodeCXX\\SET1\\P1\\main.cpp",
+  "file": "D:/Projects/VScodeCXX/SET1/P1/main.cpp",
+  "output": "CMakeFiles/P1.dir/P1/main.cpp.obj"
+},
+{
+  "directory": "D:/Projects/VScodeCXX/SET1/build",
+  "command": "E:\\Programs\\QT\\Tools\\mingw1120_64\\bin\\g++.exe   -g -O0 -Wall -std=gnu++20 -o CMakeFiles\\P2.dir\\P2\\main.cpp.obj -c D:\\Projects\\VScodeCXX\\SET1\\P2\\main.cpp",
+  "file": "D:/Projects/VScodeCXX/SET1/P2/main.cpp",
+  "output": "CMakeFiles/P2.dir/P2/main.cpp.obj"
+},
+{
+  "directory": "D:/Projects/VScodeCXX/SET1/build",
+  "command": "E:\\Programs\\QT\\Tools\\mingw1120_64\\bin\\g++.exe   -g -O0 -Wall -std=gnu++20 -o CMakeFiles\\P3.dir\\P3\\main.cpp.obj -c D:\\Projects\\VScodeCXX\\SET1\\P3\\main.cpp",
+  "file": "D:/Projects/VScodeCXX/SET1/P3/main.cpp",
+  "output": "CMakeFiles/P3.dir/P3/main.cpp.obj"
+},
+{
+  "directory": "D:/Projects/VScodeCXX/SET1/build",
+  "command": "E:\\Programs\\QT\\Tools\\mingw1120_64\\bin\\g++.exe   -g -O0 -Wall -std=gnu++20 -o CMakeFiles\\P4.dir\\P4\\main.cpp.obj -c D:\\Projects\\VScodeCXX\\SET1\\P4\\main.cpp",
+  "file": "D:/Projects/VScodeCXX/SET1/P4/main.cpp",
+  "output": "CMakeFiles/P4.dir/P4/main.cpp.obj"
+}
+]

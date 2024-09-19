@@ -1,0 +1,3 @@
+E:\Programs\QT\Tools\CMake_64\bin\cmake.exe -E rm -f CMakeFiles\P4.dir/objects.a
+E:\Programs\QT\Tools\mingw1120_64\bin\ar.exe qc CMakeFiles\P4.dir/objects.a @CMakeFiles\P4.dir\objects1.rsp
+E:\Programs\QT\Tools\mingw1120_64\bin\g++.exe -g -O0 -Wall -Wl,--whole-archive CMakeFiles\P4.dir/objects.a -Wl,--no-whole-archive -o P4.exe -Wl,--out-implib,libP4.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\P4.dir\linkLibs.rsp
