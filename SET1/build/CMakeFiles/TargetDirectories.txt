@@ -1,6 +1,6 @@
-D:/Projects/VScodeCXX/SET1/build/CMakeFiles/P1.dir
-D:/Projects/VScodeCXX/SET1/build/CMakeFiles/P2.dir
-D:/Projects/VScodeCXX/SET1/build/CMakeFiles/P3.dir
-D:/Projects/VScodeCXX/SET1/build/CMakeFiles/P4.dir
-D:/Projects/VScodeCXX/SET1/build/CMakeFiles/edit_cache.dir
-D:/Projects/VScodeCXX/SET1/build/CMakeFiles/rebuild_cache.dir
+D:/Projects/VScodeCXX/ADS/SET1/build/CMakeFiles/P1.dir
+D:/Projects/VScodeCXX/ADS/SET1/build/CMakeFiles/P2.dir
+D:/Projects/VScodeCXX/ADS/SET1/build/CMakeFiles/P3.dir
+D:/Projects/VScodeCXX/ADS/SET1/build/CMakeFiles/P4.dir
+D:/Projects/VScodeCXX/ADS/SET1/build/CMakeFiles/edit_cache.dir
+D:/Projects/VScodeCXX/ADS/SET1/build/CMakeFiles/rebuild_cache.dir

@@ -76,8 +76,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "D:/Projects/VScodeCXX/SET1/build",
-		"source" : "D:/Projects/VScodeCXX/SET1"
+		"build" : "D:/Projects/VScodeCXX/ADS/SET1/build",
+		"source" : "D:/Projects/VScodeCXX/ADS/SET1"
 	},
 	"version" : 
 	{
