@@ -4,22 +4,22 @@
 		"generator" : 
 		{
 			"multiConfig" : false,
-			"name" : "MinGW Makefiles"
+			"name" : "Unix Makefiles"
 		},
 		"paths" : 
 		{
-			"cmake" : "E:/Programs/QT/Tools/CMake_64/bin/cmake.exe",
-			"cpack" : "E:/Programs/QT/Tools/CMake_64/bin/cpack.exe",
-			"ctest" : "E:/Programs/QT/Tools/CMake_64/bin/ctest.exe",
-			"root" : "E:/Programs/QT/Tools/CMake_64/share/cmake-3.29"
+			"cmake" : "D:/SE/Makers/Cmake/bin/cmake.exe",
+			"cpack" : "D:/SE/Makers/Cmake/bin/cpack.exe",
+			"ctest" : "D:/SE/Makers/Cmake/bin/ctest.exe",
+			"root" : "D:/SE/Makers/Cmake/share/cmake-3.30"
 		},
 		"version" : 
 		{
 			"isDirty" : false,
 			"major" : 3,
-			"minor" : 29,
+			"minor" : 30,
 			"patch" : 3,
-			"string" : "3.29.3",
+			"string" : "3.30.3",
 			"suffix" : ""
 		}
 	},
@@ -35,7 +35,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cache-v2-c719142f4f00902002e2.json",
+			"jsonFile" : "cache-v2-160fbe2ca73b5db7e943.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -44,16 +44,16 @@
 			}
 		},
 		{
-			"jsonFile" : "cmakeFiles-v1-21d8ee36ae22274cd885.json",
+			"jsonFile" : "cmakeFiles-v1-c48c2a2cae371ec512d3.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
 				"major" : 1,
-				"minor" : 0
+				"minor" : 1
 			}
 		},
 		{
-			"jsonFile" : "toolchains-v1-108eb9f82690942af720.json",
+			"jsonFile" : "toolchains-v1-1335ea822f390249e1f2.json",
 			"kind" : "toolchains",
 			"version" : 
 			{
@@ -90,7 +90,7 @@
 				"responses" : 
 				[
 					{
-						"jsonFile" : "cache-v2-c719142f4f00902002e2.json",
+						"jsonFile" : "cache-v2-160fbe2ca73b5db7e943.json",
 						"kind" : "cache",
 						"version" : 
 						{
@@ -108,7 +108,7 @@
 						}
 					},
 					{
-						"jsonFile" : "toolchains-v1-108eb9f82690942af720.json",
+						"jsonFile" : "toolchains-v1-1335ea822f390249e1f2.json",
 						"kind" : "toolchains",
 						"version" : 
 						{
@@ -117,12 +117,12 @@
 						}
 					},
 					{
-						"jsonFile" : "cmakeFiles-v1-21d8ee36ae22274cd885.json",
+						"jsonFile" : "cmakeFiles-v1-c48c2a2cae371ec512d3.json",
 						"kind" : "cmakeFiles",
 						"version" : 
 						{
 							"major" : 1,
-							"minor" : 0
+							"minor" : 1
 						}
 					}
 				]

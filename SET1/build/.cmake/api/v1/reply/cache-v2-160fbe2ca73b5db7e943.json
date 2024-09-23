@@ -15,7 +15,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "E:/Programs/QT/Tools/mingw1120_64/bin/addr2line.exe"
+			"value" : "D:/SE/Compilers/w64devkit/bin/addr2line.exe"
 		},
 		{
 			"name" : "CMAKE_AR",
@@ -31,7 +31,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "E:/Programs/QT/Tools/mingw1120_64/bin/ar.exe"
+			"value" : "D:/SE/Compilers/w64devkit/bin/ar.exe"
 		},
 		{
 			"name" : "CMAKE_BUILD_TYPE",
@@ -79,7 +79,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "29"
+			"value" : "30"
 		},
 		{
 			"name" : "CMAKE_CACHE_PATCH_VERSION",
@@ -119,7 +119,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "E:/Programs/QT/Tools/CMake_64/bin/cmake.exe"
+			"value" : "D:/SE/Makers/Cmake/bin/cmake.exe"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -131,7 +131,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "E:/Programs/QT/Tools/CMake_64/bin/cpack.exe"
+			"value" : "D:/SE/Makers/Cmake/bin/cpack.exe"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -143,7 +143,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "E:/Programs/QT/Tools/CMake_64/bin/ctest.exe"
+			"value" : "D:/SE/Makers/Cmake/bin/ctest.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -159,7 +159,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "E:/Programs/QT/Tools/mingw1120_64/bin/g++.exe"
+			"value" : "D:/SE/Compilers/w64devkit/bin/g++.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_AR",
@@ -175,7 +175,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "E:/Programs/QT/Tools/mingw1120_64/bin/gcc-ar.exe"
+			"value" : "D:/SE/Compilers/w64devkit/bin/gcc-ar.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_RANLIB",
@@ -191,7 +191,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "E:/Programs/QT/Tools/mingw1120_64/bin/gcc-ranlib.exe"
+			"value" : "D:/SE/Compilers/w64devkit/bin/gcc-ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS",
@@ -299,7 +299,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "E:/Programs/QT/Tools/mingw1120_64/bin/gcc.exe"
+			"value" : "D:/SE/Compilers/w64devkit/bin/gcc.exe"
 		},
 		{
 			"name" : "CMAKE_DLLTOOL",
@@ -315,7 +315,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "E:/Programs/QT/Tools/mingw1120_64/bin/dlltool.exe"
+			"value" : "D:/SE/Compilers/w64devkit/bin/dlltool.exe"
 		},
 		{
 			"name" : "CMAKE_EDIT_COMMAND",
@@ -327,7 +327,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "E:/Programs/QT/Tools/CMake_64/bin/cmake-gui.exe"
+			"value" : "D:/SE/Makers/Cmake/bin/cmake-gui.exe"
 		},
 		{
 			"name" : "CMAKE_EXECUTABLE_FORMAT",
@@ -467,7 +467,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "MinGW Makefiles"
+			"value" : "Unix Makefiles"
 		},
 		{
 			"name" : "CMAKE_GENERATOR_INSTANCE",
@@ -555,7 +555,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "E:/Programs/QT/Tools/mingw1120_64/bin/ld.exe"
+			"value" : "D:/SE/Compilers/w64devkit/bin/ld.exe"
 		},
 		{
 			"name" : "CMAKE_MAKE_PROGRAM",
@@ -571,7 +571,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "E:/Programs/QT/Tools/mingw1120_64/bin/mingw32-make.exe"
+			"value" : "D:/SE/Compilers/w64devkit/bin/make.exe"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -667,7 +667,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "E:/Programs/QT/Tools/mingw1120_64/bin/nm.exe"
+			"value" : "D:/SE/Compilers/w64devkit/bin/nm.exe"
 		},
 		{
 			"name" : "CMAKE_NUMBER_OF_MAKEFILES",
@@ -695,7 +695,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "E:/Programs/QT/Tools/mingw1120_64/bin/objcopy.exe"
+			"value" : "D:/SE/Compilers/w64devkit/bin/objcopy.exe"
 		},
 		{
 			"name" : "CMAKE_OBJDUMP",
@@ -711,7 +711,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "E:/Programs/QT/Tools/mingw1120_64/bin/objdump.exe"
+			"value" : "D:/SE/Compilers/w64devkit/bin/objdump.exe"
 		},
 		{
 			"name" : "CMAKE_PLATFORM_INFO_INITIALIZED",
@@ -775,7 +775,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "E:/Programs/QT/Tools/mingw1120_64/bin/ranlib.exe"
+			"value" : "D:/SE/Compilers/w64devkit/bin/ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_RC_COMPILER",
@@ -791,7 +791,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "E:/Programs/QT/Tools/mingw1120_64/bin/windres.exe"
+			"value" : "D:/SE/Compilers/w64devkit/bin/windres.exe"
 		},
 		{
 			"name" : "CMAKE_RC_COMPILER_WORKS",
@@ -899,7 +899,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "E:/Programs/QT/Tools/mingw1120_64/bin/readelf.exe"
+			"value" : "CMAKE_READELF-NOTFOUND"
 		},
 		{
 			"name" : "CMAKE_ROOT",
@@ -911,7 +911,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "E:/Programs/QT/Tools/CMake_64/share/cmake-3.29"
+			"value" : "D:/SE/Makers/Cmake/share/cmake-3.30"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1119,7 +1119,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "E:/Programs/QT/Tools/mingw1120_64/bin/strip.exe"
+			"value" : "D:/SE/Compilers/w64devkit/bin/strip.exe"
 		},
 		{
 			"name" : "CMAKE_TAPI",
