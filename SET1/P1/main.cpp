@@ -147,6 +147,7 @@ void List::reverse() {
 
 void List::remove_duplicates() {
     throw std::runtime_error("Not implemented!");
+    //zhopa
 }
 
 void List::replace(int old_value, int new_value) {
