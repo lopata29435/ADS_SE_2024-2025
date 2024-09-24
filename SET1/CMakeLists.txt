@@ -13,7 +13,7 @@ set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -O0 -Wall")
 set(CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -O0")
 
 #### the list of targets ####
-add_executable(P1 P1/main.cpp
+add_executable(P1 P1/release.cpp
                   P1/list.h)
 add_executable(P2 P2/main.cpp)
 add_executable(P3 P3/main.cpp)
