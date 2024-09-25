@@ -54,15 +54,7 @@ List::List(std::vector<int> array)
 }
 
 List::~List() {
-    Node* current = head;
-    while (current) {
-      Node* tmp = current;
-      current = current->next;
-      delete tmp;  
-    }
-    _size = 0;
-    head = nullptr;
-    tail = nullptr;
+    clear();
 }
 
 int List::front() {
@@ -76,17 +68,31 @@ int List::back() {
 
 void List::push_back(int value) {
     Node* pb = new Node(tail, nullptr, value);
-    tail->next = pb;
+    
+    if (tail != nullptr) {
+        tail->next = pb;
+    } else {
+        head = pb;
+    }
+    
     tail = pb;
     _size++;
 }
 
+
 void List::push_front(int value) {
     Node* pf = new Node(nullptr, head, value);
-    head->prev = pf;
+    
+    if (head != nullptr) {
+        head->prev = pf;
+    } else {
+        tail = pf;
+    }
+    
     head = pf;
     _size++;
 }
+
 
 void List::insert(Node* pos, int value) {
     if (!pos) {
@@ -141,12 +147,12 @@ void List::erase(Node* pos) {
 void List::clear() {
     Node* current = head;
     while (current) {
-      Node* tmp = current;
-      current = current->next;
-      delete tmp;  
+        Node* tmp = current;
+        current = current->next;
+        delete tmp;  
     }
-    delete head;
-    delete tail;
+    head = nullptr;
+    tail = nullptr;
     _size = 0;
 }
 
@@ -246,7 +252,7 @@ void List::copy(const List& other) {
         }
     }
 
-    if(!current) {
+    if (!current) {
         current = current->prev;
         while (curCppy) {
             Node* new_node = new Node(current, nullptr, curCppy->value);
