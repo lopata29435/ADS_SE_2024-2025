@@ -2,19 +2,17 @@
 #include <stack>
 #include <vector>
 
-using namespace std;
-
 int main() {
     int n;
-    cin >> n;
+    std::cin >> n;
     
-    vector<int> train(n);
+    std::vector<int> train(n);
     for (int i = 0; i < n; ++i) {
-        cin >> train[i];
+        std::cin >> train[i];
     }
     
-    stack<int> depot;
-    vector<pair<int, int>> actions;
+    std::stack<int> depot;
+    std::vector<std::pair<int, int>> actions;
     int expected = 1;
     
     for (int i = 0; i < n; ++i) {
@@ -30,10 +28,10 @@ int main() {
     
     if (expected == n + 1) {
         for (auto action : actions) {
-            cout << action.first << " " << action.second << '\n';
+            std::cout << action.first << " " << action.second << '\n';
         }
     } else {
-        cout << 0 << '\n';
+        std::cout << 0 << '\n';
     }
     
     return 0;
