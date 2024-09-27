@@ -18,5 +18,6 @@ add_executable(P1 P1/release.cpp
 add_executable(P2 P2/main.cpp)
 add_executable(P3 P3/main.cpp)
 add_executable(P4 P4/main.cpp)
+add_executable(P5 P5/main.cpp)
 
 

@@ -167,6 +167,19 @@ P4/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\P4.dir\build.make CMakeFiles/P4.dir/build
 .PHONY : P4/fast
 
+#=============================================================================
+# Target rules for targets named P5
+
+# Build rule for target.
+P5: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 P5
+.PHONY : P5
+
+# fast build rule for target.
+P5/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\P5.dir\build.make CMakeFiles/P5.dir/build
+.PHONY : P5/fast
+
 P1/release.obj: P1/release.cpp.obj
 .PHONY : P1/release.obj
 
@@ -263,6 +276,30 @@ P4/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\P4.dir\build.make CMakeFiles/P4.dir/P4/main.cpp.s
 .PHONY : P4/main.cpp.s
 
+P5/main.obj: P5/main.cpp.obj
+.PHONY : P5/main.obj
+
+# target to build an object file
+P5/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\P5.dir\build.make CMakeFiles/P5.dir/P5/main.cpp.obj
+.PHONY : P5/main.cpp.obj
+
+P5/main.i: P5/main.cpp.i
+.PHONY : P5/main.i
+
+# target to preprocess a source file
+P5/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\P5.dir\build.make CMakeFiles/P5.dir/P5/main.cpp.i
+.PHONY : P5/main.cpp.i
+
+P5/main.s: P5/main.cpp.s
+.PHONY : P5/main.s
+
+# target to generate assembly for a file
+P5/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\P5.dir\build.make CMakeFiles/P5.dir/P5/main.cpp.s
+.PHONY : P5/main.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -275,6 +312,7 @@ help:
 	@echo ... P2
 	@echo ... P3
 	@echo ... P4
+	@echo ... P5
 	@echo ... P1/release.obj
 	@echo ... P1/release.i
 	@echo ... P1/release.s
@@ -287,6 +325,9 @@ help:
 	@echo ... P4/main.obj
 	@echo ... P4/main.i
 	@echo ... P4/main.s
+	@echo ... P5/main.obj
+	@echo ... P5/main.i
+	@echo ... P5/main.s
 .PHONY : help
 
 

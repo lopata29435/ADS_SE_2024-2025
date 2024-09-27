@@ -66,6 +66,7 @@ all: CMakeFiles/P1.dir/all
 all: CMakeFiles/P2.dir/all
 all: CMakeFiles/P3.dir/all
 all: CMakeFiles/P4.dir/all
+all: CMakeFiles/P5.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -77,6 +78,7 @@ clean: CMakeFiles/P1.dir/clean
 clean: CMakeFiles/P2.dir/clean
 clean: CMakeFiles/P3.dir/clean
 clean: CMakeFiles/P4.dir/clean
+clean: CMakeFiles/P5.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -182,6 +184,32 @@ P4: CMakeFiles/P4.dir/rule
 CMakeFiles/P4.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\P4.dir\build.make CMakeFiles/P4.dir/clean
 .PHONY : CMakeFiles/P4.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/P5.dir
+
+# All Build rule for target.
+CMakeFiles/P5.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\P5.dir\build.make CMakeFiles/P5.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\P5.dir\build.make CMakeFiles/P5.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\Projects\VScodeCXX\ADS\SET1\build\CMakeFiles --progress-num=9,10 "Built target P5"
+.PHONY : CMakeFiles/P5.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/P5.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\VScodeCXX\ADS\SET1\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/P5.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\VScodeCXX\ADS\SET1\build\CMakeFiles 0
+.PHONY : CMakeFiles/P5.dir/rule
+
+# Convenience name for target.
+P5: CMakeFiles/P5.dir/rule
+.PHONY : P5
+
+# clean rule for target.
+CMakeFiles/P5.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\P5.dir\build.make CMakeFiles/P5.dir/clean
+.PHONY : CMakeFiles/P5.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

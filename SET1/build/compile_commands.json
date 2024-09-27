@@ -22,5 +22,11 @@
   "command": "E:\\Programs\\QT\\Tools\\mingw1310_64\\bin\\g++.exe   -g -O0 -Wall -std=gnu++20 -o CMakeFiles\\P4.dir\\P4\\main.cpp.obj -c D:\\Projects\\VScodeCXX\\ADS\\SET1\\P4\\main.cpp",
   "file": "D:/Projects/VScodeCXX/ADS/SET1/P4/main.cpp",
   "output": "CMakeFiles/P4.dir/P4/main.cpp.obj"
+},
+{
+  "directory": "D:/Projects/VScodeCXX/ADS/SET1/build",
+  "command": "E:\\Programs\\QT\\Tools\\mingw1310_64\\bin\\g++.exe   -g -O0 -Wall -std=gnu++20 -o CMakeFiles\\P5.dir\\P5\\main.cpp.obj -c D:\\Projects\\VScodeCXX\\ADS\\SET1\\P5\\main.cpp",
+  "file": "D:/Projects/VScodeCXX/ADS/SET1/P5/main.cpp",
+  "output": "CMakeFiles/P5.dir/P5/main.cpp.obj"
 }
 ]
