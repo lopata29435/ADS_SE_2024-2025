@@ -1,3 +1,0 @@
-E:\Programs\QT\Tools\CMake_64\bin\cmake.exe -E rm -f CMakeFiles\P2.dir/objects.a
-E:\Programs\QT\Tools\mingw1310_64\bin\ar.exe qc CMakeFiles\P2.dir/objects.a @CMakeFiles\P2.dir\objects1.rsp
-E:\Programs\QT\Tools\mingw1310_64\bin\g++.exe -g -O0 -Wall -Wl,--whole-archive CMakeFiles\P2.dir/objects.a -Wl,--no-whole-archive -o P2.exe -Wl,--out-implib,libP2.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\P2.dir\linkLibs.rsp
