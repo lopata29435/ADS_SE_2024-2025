@@ -1,0 +1,105 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ContestX_skeleton",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "P1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-P1-Debug-0c2ea204d81489bf336c.json",
+					"name" : "P1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "P2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-P2-Debug-d0a86ef65f5d554f9e06.json",
+					"name" : "P2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "P3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-P3-Debug-ff4c8c7d05fd5a77b5e1.json",
+					"name" : "P3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "P4::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-P4-Debug-faf592796e5f3ecca950.json",
+					"name" : "P4",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "P5::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-P5-Debug-e125e691cf576b44a955.json",
+					"name" : "P5",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "P6::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-P6-Debug-9d7b6ea19210d1fd0810.json",
+					"name" : "P6",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/Projects/VScodeCXX/ADS/SET2/build",
+		"source" : "D:/Projects/VScodeCXX/ADS/SET2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
