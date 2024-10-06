@@ -2,12 +2,10 @@ node_modules/
 
 *.log
 build/
-.vscode/
 
 .env
 
-.vscode
-
+.vscode/
 SET1/build/
 SET1/.vscode/
 SET2/build/
