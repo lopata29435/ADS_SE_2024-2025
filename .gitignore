@@ -5,7 +5,7 @@ build/
 
 .env
 
-.vscode/
+../.vscode/
 SET1/build/
 SET1/.vscode/
 SET2/build/
