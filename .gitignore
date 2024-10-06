@@ -2,12 +2,13 @@ node_modules/
 
 *.log
 build/
+.vscode/
 
 .env
 
 .vscode
 
-ADS/SET1/build/
-ADS/SET1/.vscode/
-ADS/SET2/build/
-ADS/SET2/.vscode/
+SET1/build/
+SET1/.vscode/
+SET2/build/
+SET2/.vscode/
