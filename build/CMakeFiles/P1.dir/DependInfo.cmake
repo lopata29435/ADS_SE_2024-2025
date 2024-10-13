@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/Projects/VScodeCXX/ADS/SET1/P1/release.cpp" "CMakeFiles/P1.dir/P1/release.cpp.obj" "gcc" "CMakeFiles/P1.dir/P1/release.cpp.obj.d"
+  "/home/petr/Desktop/tmp/ADS_SE_2024-2025/SET1/P1/release.cpp" "CMakeFiles/P1.dir/P1/release.cpp.o" "gcc" "CMakeFiles/P1.dir/P1/release.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

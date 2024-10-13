@@ -1,32 +1,32 @@
 [
 {
-  "directory": "D:/Projects/VScodeCXX/ADS/build",
-  "command": "E:\\Programs\\QT\\Tools\\mingw1310_64\\bin\\g++.exe   -g -O0 -Wall -std=gnu++20 -o CMakeFiles\\P1.dir\\P1\\release.cpp.obj -c D:\\Projects\\VScodeCXX\\ADS\\SET1\\P1\\release.cpp",
-  "file": "D:/Projects/VScodeCXX/ADS/SET1/P1/release.cpp",
-  "output": "CMakeFiles/P1.dir/P1/release.cpp.obj"
+  "directory": "/home/petr/Desktop/tmp/ADS_SE_2024-2025/build",
+  "command": "/usr/bin/c++   -g -O0 -Wall -std=gnu++20 -o CMakeFiles/P1.dir/P1/release.cpp.o -c /home/petr/Desktop/tmp/ADS_SE_2024-2025/SET1/P1/release.cpp",
+  "file": "/home/petr/Desktop/tmp/ADS_SE_2024-2025/SET1/P1/release.cpp",
+  "output": "CMakeFiles/P1.dir/P1/release.cpp.o"
 },
 {
-  "directory": "D:/Projects/VScodeCXX/ADS/build",
-  "command": "E:\\Programs\\QT\\Tools\\mingw1310_64\\bin\\g++.exe   -g -O0 -Wall -std=gnu++20 -o CMakeFiles\\P2.dir\\P2\\main.cpp.obj -c D:\\Projects\\VScodeCXX\\ADS\\SET1\\P2\\main.cpp",
-  "file": "D:/Projects/VScodeCXX/ADS/SET1/P2/main.cpp",
-  "output": "CMakeFiles/P2.dir/P2/main.cpp.obj"
+  "directory": "/home/petr/Desktop/tmp/ADS_SE_2024-2025/build",
+  "command": "/usr/bin/c++   -g -O0 -Wall -std=gnu++20 -o CMakeFiles/P2.dir/P2/main.cpp.o -c /home/petr/Desktop/tmp/ADS_SE_2024-2025/SET1/P2/main.cpp",
+  "file": "/home/petr/Desktop/tmp/ADS_SE_2024-2025/SET1/P2/main.cpp",
+  "output": "CMakeFiles/P2.dir/P2/main.cpp.o"
 },
 {
-  "directory": "D:/Projects/VScodeCXX/ADS/build",
-  "command": "E:\\Programs\\QT\\Tools\\mingw1310_64\\bin\\g++.exe   -g -O0 -Wall -std=gnu++20 -o CMakeFiles\\P3.dir\\P3\\main.cpp.obj -c D:\\Projects\\VScodeCXX\\ADS\\SET1\\P3\\main.cpp",
-  "file": "D:/Projects/VScodeCXX/ADS/SET1/P3/main.cpp",
-  "output": "CMakeFiles/P3.dir/P3/main.cpp.obj"
+  "directory": "/home/petr/Desktop/tmp/ADS_SE_2024-2025/build",
+  "command": "/usr/bin/c++   -g -O0 -Wall -std=gnu++20 -o CMakeFiles/P3.dir/P3/main.cpp.o -c /home/petr/Desktop/tmp/ADS_SE_2024-2025/SET1/P3/main.cpp",
+  "file": "/home/petr/Desktop/tmp/ADS_SE_2024-2025/SET1/P3/main.cpp",
+  "output": "CMakeFiles/P3.dir/P3/main.cpp.o"
 },
 {
-  "directory": "D:/Projects/VScodeCXX/ADS/build",
-  "command": "E:\\Programs\\QT\\Tools\\mingw1310_64\\bin\\g++.exe   -g -O0 -Wall -std=gnu++20 -o CMakeFiles\\P4.dir\\P4\\main.cpp.obj -c D:\\Projects\\VScodeCXX\\ADS\\SET1\\P4\\main.cpp",
-  "file": "D:/Projects/VScodeCXX/ADS/SET1/P4/main.cpp",
-  "output": "CMakeFiles/P4.dir/P4/main.cpp.obj"
+  "directory": "/home/petr/Desktop/tmp/ADS_SE_2024-2025/build",
+  "command": "/usr/bin/c++   -g -O0 -Wall -std=gnu++20 -o CMakeFiles/P4.dir/P4/main.cpp.o -c /home/petr/Desktop/tmp/ADS_SE_2024-2025/SET1/P4/main.cpp",
+  "file": "/home/petr/Desktop/tmp/ADS_SE_2024-2025/SET1/P4/main.cpp",
+  "output": "CMakeFiles/P4.dir/P4/main.cpp.o"
 },
 {
-  "directory": "D:/Projects/VScodeCXX/ADS/build",
-  "command": "E:\\Programs\\QT\\Tools\\mingw1310_64\\bin\\g++.exe   -g -O0 -Wall -std=gnu++20 -o CMakeFiles\\P5.dir\\P5\\main.cpp.obj -c D:\\Projects\\VScodeCXX\\ADS\\SET1\\P5\\main.cpp",
-  "file": "D:/Projects/VScodeCXX/ADS/SET1/P5/main.cpp",
-  "output": "CMakeFiles/P5.dir/P5/main.cpp.obj"
+  "directory": "/home/petr/Desktop/tmp/ADS_SE_2024-2025/build",
+  "command": "/usr/bin/c++   -g -O0 -Wall -std=gnu++20 -o CMakeFiles/P5.dir/P5/main.cpp.o -c /home/petr/Desktop/tmp/ADS_SE_2024-2025/SET1/P5/main.cpp",
+  "file": "/home/petr/Desktop/tmp/ADS_SE_2024-2025/SET1/P5/main.cpp",
+  "output": "CMakeFiles/P5.dir/P5/main.cpp.o"
 }
 ]

@@ -1,10 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/P4.dir/P4/main.cpp.obj"
-  "CMakeFiles/P4.dir/P4/main.cpp.obj.d"
-  "P4.exe"
-  "P4.exe.manifest"
+  "CMakeFiles/P4.dir/P4/main.cpp.o"
+  "CMakeFiles/P4.dir/P4/main.cpp.o.d"
+  "P4"
   "P4.pdb"
-  "libP4.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

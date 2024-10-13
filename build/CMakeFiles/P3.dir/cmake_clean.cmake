@@ -1,10 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/P3.dir/P3/main.cpp.obj"
-  "CMakeFiles/P3.dir/P3/main.cpp.obj.d"
-  "P3.exe"
-  "P3.exe.manifest"
+  "CMakeFiles/P3.dir/P3/main.cpp.o"
+  "CMakeFiles/P3.dir/P3/main.cpp.o.d"
+  "P3"
   "P3.pdb"
-  "libP3.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

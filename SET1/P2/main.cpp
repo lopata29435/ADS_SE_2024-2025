@@ -11,6 +11,7 @@ int main() {
         std::cin >> a[i];
     }
     
+    
     int mx = -1;
     int cnt = 0;
     
@@ -32,6 +33,7 @@ int main() {
         for (int i = 0; i < n; ++i) {
             if (a[i] != sa[i]) {
                 ++dst;
+            }
         }
         
         if (dst > mx) {
