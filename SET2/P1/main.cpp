@@ -91,9 +91,6 @@ int main() {
         }
     }
     
-    // for (int i = 0; i < n; ++i) {
-    //     std::cout << a[i].left << ' ' << a[i].right << '\n';
-    // }
 
     std::cout << ans << '\n';
     if(ans) {
