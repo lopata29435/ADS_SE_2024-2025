@@ -1,58 +1,64 @@
 #include <iostream>
 #include <vector>
+#include <queue>
 #include <algorithm>
+#include <cstdint>
 
-void countingSort(std::vector<int>& A, int n, int exp) {
-    std::vector<int> output(n);
-    std::vector<int> count(512, 0);
+using namespace std;
 
-    for (int i = 0; i < n; i++) {
-        int idx = (A[i] / exp) % 256 + 256;
-        count[idx]++;
-    }
 
-    for (int i = 1; i < 512; i++) {
-        count[i] += count[i - 1];
-    }
+void radixSort(vector<int32_t>& arr) {
+    const int32_t base = 256;
+    vector<queue<int32_t>> buckets(base);
 
-    for (int i = n - 1; i >= 0; i--) {
-        int idx = (A[i] / exp) % 256 + 256;
-        output[count[idx] - 1] = A[i];
-        count[idx]--;
-    }
+    for (int32_t shift = 0; shift < 32; shift += 8) {
+        for (int32_t num : arr) {
+            int32_t byte = (num >> shift) & 0xFF;
+            buckets[byte].push(num);
+        }
 
-    for (int i = 0; i < n; i++) {
-        A[i] = output[i];
-    }
-}
-
-void radixSort(std::vector<int>& A, int n) {
-    int maxVal = *std::max_element(A.begin(), A.end());
-    int minVal = *std::min_element(A.begin(), A.end());
-
-    for (int exp = 1; maxVal / exp > 0 || minVal / exp < 0; exp *= 256) {
-        countingSort(A, n, exp);
+        int32_t index = 0;
+        for (int32_t i = 0; i < base; ++i) {
+            while (!buckets[i].empty()) {
+                arr[index++] = buckets[i].front();
+                buckets[i].pop();
+            }
+        }
     }
 }
 
-int main() {
+int32_t main() {
     std::ios::sync_with_stdio(false);
     std::cin.tie(nullptr);
     std::cout.tie(nullptr);
 
-    int n;
+    int32_t n;
     std::cin >> n;
-    std::vector<int> a(n);
+    std::vector<int32_t> pos;
+    std::vector<int32_t> neg;
 
-    for (int i = 0; i < n; i++) {
-        std::cin >> a[i];
+    int32_t x;
+    for (int32_t i = 0; i < n; i++) {
+        std::cin >> x;
+        if(x >= 0) {
+            pos.push_back(x);
+        } else {
+            neg.push_back(-x);
+        }
     }
 
-    radixSort(a, n);
+    radixSort(pos);
+    radixSort(neg);
 
-    for (int i = 0; i < n; i++) {
-        std::cout << a[i] << " ";
-    }
+    
+    reverse(neg.begin(), neg.end());
+    for (int32_t i = 0; i < neg.size(); i++) {
+        std::cout << -neg[i] << " ";
+    } 
+    for (int32_t i = 0; i < pos.size(); i++) {
+        std::cout << pos[i] << " ";
+    } 
+    
 
     return 0;
 }
