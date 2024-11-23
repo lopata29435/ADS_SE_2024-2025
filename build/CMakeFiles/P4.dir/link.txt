@@ -1,1 +1,0 @@
-/usr/bin/c++ -g -O0 -Wall CMakeFiles/P4.dir/P4/main.cpp.o -o P4 

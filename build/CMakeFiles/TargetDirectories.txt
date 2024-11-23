@@ -1,7 +1,0 @@
-/home/petr/Desktop/tmp/ADS_SE_2024-2025/build/CMakeFiles/P1.dir
-/home/petr/Desktop/tmp/ADS_SE_2024-2025/build/CMakeFiles/P2.dir
-/home/petr/Desktop/tmp/ADS_SE_2024-2025/build/CMakeFiles/P3.dir
-/home/petr/Desktop/tmp/ADS_SE_2024-2025/build/CMakeFiles/P4.dir
-/home/petr/Desktop/tmp/ADS_SE_2024-2025/build/CMakeFiles/P5.dir
-/home/petr/Desktop/tmp/ADS_SE_2024-2025/build/CMakeFiles/edit_cache.dir
-/home/petr/Desktop/tmp/ADS_SE_2024-2025/build/CMakeFiles/rebuild_cache.dir

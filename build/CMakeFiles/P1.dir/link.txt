@@ -1,1 +1,0 @@
-/usr/bin/c++ -g -O0 -Wall CMakeFiles/P1.dir/P1/release.cpp.o -o P1 

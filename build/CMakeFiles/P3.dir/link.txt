@@ -1,1 +1,0 @@
-/usr/bin/c++ -g -O0 -Wall CMakeFiles/P3.dir/P3/main.cpp.o -o P3 
