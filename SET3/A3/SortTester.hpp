@@ -17,7 +17,7 @@ public:
                 std::cerr << "Failed to open file for writing header: " << fileName << "\n";
                 return;
             }
-            outFile << "Size,TimeMicroseconds,Threshold\n";
+            outFile << "Size,TimeMicroseconds\n";
         }
     }
 
@@ -29,22 +29,22 @@ public:
         return std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
     }
 
-    static void runTests(std::vector<int> thresholds, std::vector<int> sizes) {
+    static void runTests(std::vector<int> sizes) {
         ArrayGenerator generator;
-
-        for (int threshold : thresholds) {
-            for (int size : sizes) {
+        std::random_device rd;
+        std::mt19937 gen(rd());
+        for (int size : sizes) {
                 std::vector<int> randomArr = generator.generateRandomArray(size, 0, 6000);
                 std::vector<int> reversedArr = generator.generateReversedArray(size);
                 std::vector<int> nearlySortedArr = generator.generateNearlySortedArray(size, size / 10);
 
                 std::vector<std::string> arrayTypes = {"Random", "Reversed", "NearlySorted"};
-                std::vector<std::string> sortMethods = {"MergeSort", "HybridSort"};
+                std::vector<std::string> sortMethods = {"Introsort", "QuickSort"};
 
                 for (const auto& arrayType : arrayTypes) {
                     for (const auto& sortMethod : sortMethods) {
                         std::ostringstream fileName;
-                        fileName << "sort_results_" << arrayType << "_" << sortMethod << "_Threshold" << threshold << ".csv";
+                        fileName << "sort_results_" << arrayType << "_" << sortMethod << ".csv";
 
                         writeHeaderIfNeeded(fileName.str());
 
@@ -57,30 +57,29 @@ public:
                         long long time = 0;
 
                         if (arrayType == "Random") {
-                            if (sortMethod == "MergeSort") {
-                                time = testSort([&](std::vector<int>& arr) { mergeSort(arr, 0, arr.size() - 1); }, randomArr);
-                            } else if (sortMethod == "HybridSort") {
-                                time = testSort([&](std::vector<int>& arr) { hybridMergeSort(arr, 0, arr.size() - 1, threshold); }, randomArr);
+                            if (sortMethod == "Introsort") {
+                                time = testSort([&](std::vector<int>& arr) { Introsort(arr, gen); }, randomArr);
+                            } else if (sortMethod == "QuickSort") {
+                                time = testSort([&](std::vector<int>& arr) { QuickSort(arr, gen); }, randomArr);
                             }
                         } else if (arrayType == "Reversed") {
-                            if (sortMethod == "MergeSort") {
-                                time = testSort([&](std::vector<int>& arr) { mergeSort(arr, 0, arr.size() - 1); }, reversedArr);
-                            } else if (sortMethod == "HybridSort") {
-                                time = testSort([&](std::vector<int>& arr) { hybridMergeSort(arr, 0, arr.size() - 1, threshold); }, reversedArr);
+                            if (sortMethod == "Introsort") {
+                                time = testSort([&](std::vector<int>& arr) { Introsort(arr, gen); }, reversedArr);
+                            } else if (sortMethod == "QuickSort") {
+                                time = testSort([&](std::vector<int>& arr) { QuickSort(arr, gen); }, reversedArr);
                             }
                         } else if (arrayType == "NearlySorted") {
-                            if (sortMethod == "MergeSort") {
-                                time = testSort([&](std::vector<int>& arr) { mergeSort(arr, 0, arr.size() - 1); }, nearlySortedArr);
-                            } else if (sortMethod == "HybridSort") {
-                                time = testSort([&](std::vector<int>& arr) { hybridMergeSort(arr, 0, arr.size() - 1, threshold); }, nearlySortedArr);
+                            if (sortMethod == "Introsort") {
+                                time = testSort([&](std::vector<int>& arr) { Introsort(arr, gen); }, nearlySortedArr);
+                            } else if (sortMethod == "QuickSort") {
+                                time = testSort([&](std::vector<int>& arr) { QuickSort(arr, gen); }, nearlySortedArr);
                             }
                         }
 
-                        outFile << size << "," << time << "," << threshold << "\n";
+                        outFile << size << "," << time << "\n";
                     }
                 }
             }
-        }
         std::cout << "Results written to respective CSV files.\n";
     }
 };

@@ -21,7 +21,12 @@ add_executable(A2
                     A2/ArrayGenerator.hpp
                     A2/SortTester.hpp
                     )
-add_executable(A3 A3/main.cpp)
+add_executable(A3 
+                    A3/main.cpp
+                    A3/Sorts.hpp
+                    A3/ArrayGenerator.hpp
+                    A3/SortTester.hpp
+                    )
 
 
 add_executable(P1 P1/main.cpp)
