@@ -14,6 +14,16 @@ set(CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -O0")
 
 #### the list of targets ####
 
+add_executable(A1 A1/main.cpp)
+add_executable(A2 
+                    A2/main.cpp
+                    A2/Sorts.hpp
+                    A2/ArrayGenerator.hpp
+                    A2/SortTester.hpp
+                    )
+add_executable(A3 A3/main.cpp)
+
+
 add_executable(P1 P1/main.cpp)
 add_executable(P2 P2/main.cpp)
 add_executable(P3 P3/main.cpp)
