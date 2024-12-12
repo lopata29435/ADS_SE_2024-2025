@@ -1,110 +1,144 @@
-#include <iostream>
-#include <vector>
+#include "splay-tree.h"
 #include <algorithm>
-#include <cmath>
-#include <cstdint>
-#include <iomanip>
 
-using namespace std;
+Node::Node(int key, Node *parent) : key(key), left(nullptr), right(nullptr), parent(parent) {}
 
-double min_dist = 3e9;
-pair<int, int> closestPair;
+SplayTree::SplayTree() : root(nullptr) {}
 
-struct Point {
-    int x, y, z, idx;
-};
-
-double dist(const Point& p1, const Point& p2) {
-    return sqrt(pow(p1.x - p2.x, 2) + pow(p1.y - p2.y, 2) + pow(p1.z - p2.z, 2));
+SplayTree::~SplayTree() {
+    clear(root);
 }
 
-bool compareX(const Point& p1, const Point& p2) {
-    if (p1.x == p2.x) {
-        if (p1.y == p2.y) {
-            return p1.z < p2.z;
-        }
-        return p1.y < p2.y;
+void SplayTree::insert(int key) {
+    if (!root) {
+        root = new Node(key, nullptr);
+        return;
     }
-    return p1.x < p2.x;
+
+    Node *current = root;
+    Node *parent = nullptr;
+
+    while (current) {
+        parent = current;
+        if (key < current->key)
+            current = current->left;
+        else if (key > current->key)
+            current = current->right;
+        else
+            return;
+    }
+
+    if (key < parent->key)
+        parent->left = new Node(key, parent);
+    else
+        parent->right = new Node(key, parent);
 }
 
-bool compareY(const Point& p1, const Point& p2) {
-    return p1.y < p2.y;
+Node *SplayTree::find(int key) const {
+    Node *current = root;
+
+    while (current) {
+        if (key < current->key)
+            current = current->left;
+        else if (key > current->key)
+            current = current->right;
+        else
+            return current;
+    }
+
+    return nullptr;
 }
 
-void checkBorderPoints(vector<Point>& border) {
-    for (size_t i = 0; i < border.size(); ++i) {
-        int max_neighbour = 12;
-        for (size_t j = i + 1; j < border.size() && border[j].y - border[i].y < min_dist; ++j) {
-            if (border[j].z - border[i].z < min_dist) {
-                --max_neighbour;
-                double d = dist(border[i], border[j]);
-                if (d < min_dist) {
-                    min_dist = d;
-                    closestPair = {border[i].idx, border[j].idx};
-                }
-                if (max_neighbour == 0) {
-                    break;
-                }
+int SplayTree::splay(Node *node) {
+    if (!node)
+        return 0;
+
+    int rotations = 0;
+
+    while (node->parent) {
+        if (!node->parent->parent) {
+            if (node->parent->left == node)
+                rotateRight(node->parent);
+            else
+                rotateLeft(node->parent);
+            rotations++;
+        } else if (node->parent->left == node && node->parent->parent->left == node->parent) {
+            rotateRight(node->parent->parent);
+            rotateRight(node->parent);
+            rotations += 2;
+        } else if (node->parent->right == node && node->parent->parent->right == node->parent) {
+            rotateLeft(node->parent->parent);
+            rotateLeft(node->parent);
+            rotations += 2;
+        } else {
+            if (node->parent->left == node && node->parent->parent->right == node->parent) {
+                rotateRight(node->parent);
+                rotateLeft(node->parent);
+            } else {
+                rotateLeft(node->parent);
+                rotateRight(node->parent);
             }
+            rotations++;
         }
     }
+
+    root = node;
+    return rotations;
 }
 
-void closest_pair(vector<Point>& points, int left, int right) {
-    if (right - left <= 1) {
-        return;
-    }
 
-    if (right - left == 2) {
-        double d = dist(points[left], points[left + 1]);
-        if (d < min_dist) {
-            min_dist = d;
-            closestPair = {points[left].idx, points[left + 1].idx};
-        }
-        return;
-    }
-
-    int mid = (left + right) / 2;
-    closest_pair(points, left, mid);
-    closest_pair(points, mid, right);
-
-    int mid_x = points[mid].x;
-    double min_x_dist = min_dist;
-
-    auto left_border = lower_bound(points.begin() + left, points.begin() + right, mid_x - min_x_dist, [](const Point& p, int value) {
-        return p.x < value;
-    });
-
-    auto right_border = upper_bound(points.begin() + left, points.begin() + right, mid_x + min_x_dist, [](int value, const Point& p) {
-        return value < p.x;
-    });
-
-    vector<Point> border(left_border, right_border);
-    sort(border.begin(), border.end(), compareY);
-
-    checkBorderPoints(border);
+int SplayTree::getHeight() const {
+    return getHeight(root);
 }
 
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cout.tie(nullptr);
-    int n;
-    cin >> n;
+void SplayTree::clear(Node *node) {
+    if (!node) return;
+    clear(node->left);
+    clear(node->right);
+    delete node;
+}
 
-    vector<Point> points(n);
-    for (int i = 0; i < n; ++i) {
-        cin >> points[i].x >> points[i].y >> points[i].z;
-        points[i].idx = i + 1;
-    }
+void SplayTree::rotateLeft(Node *node) {
+    Node *pivot = node->right;
+    if (!pivot) return;
 
-    sort(points.begin(), points.end(), compareX);
+    node->right = pivot->left;
+    if (pivot->left)
+        pivot->left->parent = node;
 
-    closest_pair(points, 0, n);
+    pivot->parent = node->parent;
+    if (!node->parent)
+        root = pivot;
+    else if (node->parent->left == node)
+        node->parent->left = pivot;
+    else
+        node->parent->right = pivot;
 
-    cout << fixed << setprecision(5) << min_dist << endl;
-    cout << closestPair.first << " " << closestPair.second << endl;
+    pivot->left = node;
+    node->parent = pivot;
+}
 
-    return 0;
+void SplayTree::rotateRight(Node *node) {
+    Node *pivot = node->left;
+    if (!pivot) return;
+
+    node->left = pivot->right;
+    if (pivot->right)
+        pivot->right->parent = node;
+
+    pivot->parent = node->parent;
+    if (!node->parent)
+        root = pivot;
+    else if (node->parent->left == node)
+        node->parent->left = pivot;
+    else
+        node->parent->right = pivot;
+
+    pivot->right = node;
+    node->parent = pivot;
+}
+
+int SplayTree::getHeight(Node *node) const {
+    if (!node) return -1;
+    return 1 + std::max(getHeight(node->left), getHeight(node->right));
 }

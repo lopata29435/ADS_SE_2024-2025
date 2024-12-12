@@ -19,8 +19,10 @@ add_executable(P3   P3/main.cpp
                     P3/avl_tree.h)
 add_executable(P4   P4/main.cpp
                     P4/rbtree.h)
-add_executable(P5 P5/main.cpp)
-add_executable(P6 P6/main.cpp)
+add_executable(P5   P5/main.cpp
+                    P5/btree.h)
+add_executable(P6   P6/main.cpp
+                    P6/splay-tree.h)
 add_executable(P7 P7/main.cpp)
 
 
