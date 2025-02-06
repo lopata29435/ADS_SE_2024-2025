@@ -17,6 +17,6 @@ add_executable(P1   P1/main.cpp
                     P1/HashTable.h
                     )
 add_executable(P2 P2/main.cpp)
-add_executable(P3   P3/main.cpp
-                    P3/avl_tree.h)
+add_executable(P3   P3/main.cpp)
+add_executable(P4   A3/main.cpp)
 
