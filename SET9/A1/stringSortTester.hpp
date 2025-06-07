@@ -1,4 +1,3 @@
-// StringSortTester.hpp
 #ifndef STRING_SORT_TESTER_HPP
 #define STRING_SORT_TESTER_HPP
 
